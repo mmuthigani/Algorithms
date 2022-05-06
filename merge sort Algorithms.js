@@ -1,3 +1,5 @@
+test()
+
 function mergeSortSmallToLargest(array) {
     if (array.length <= 1) {
         return array
@@ -23,8 +25,8 @@ function mergeSmallToLargest(left, right) {
     return array.concat(left.slice()).concat(right.slice())
 }
 
-(function test() {
+function test() {
     const testArray = [4, 5, 2, 1, 3, 8]
     console.log(mergeSortSmallToLargest(testArray))
 
-})()
+}
